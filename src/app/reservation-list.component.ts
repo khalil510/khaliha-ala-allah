@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { ReservationService } from '../app/services/Reservation.Service';
+import { CommonModule } from '@angular/common';
 import { Reservation } from '../app/models/reservation.model';
 
 @Component({
   selector: 'app-reservation-list',
+  standalone: false, // Ensure this is true
   template: `
     <div class="list-container">
       <h3>Current Reservations</h3>

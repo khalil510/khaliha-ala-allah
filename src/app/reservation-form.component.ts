@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
-import { ReservationService } from '../reservation.service';
+import { ReservationService } from '../app/services/Reservation.Service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-reservation-form',
+  standalone: false, // Ensure this is true
   template: `
     <div class="form-container">
       <h3>Book a Room</h3>
