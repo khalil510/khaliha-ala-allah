@@ -7,17 +7,15 @@ import { Reservation } from '../app/models/reservation.model';
   selector: 'app-reservation-list',
   standalone: false, // Ensure this is true
   template: `
-    <div class="list-container">
-      <h3>Current Reservations</h3>
-      <table>
-        <tr><th>Guest</th><th>Check-in</th><th>Check-out</th></tr>
-        <tr *ngFor="let res of reservations">
-          <td>{{ res.guestName }}</td>
-          <td>{{ res.checkIn }}</td>
-          <td>{{ res.checkOut }}</td>
-        </tr>
-      </table>
+    <div class="reservation-grid">
+  <div class="res-card" *ngFor="let res of reservations">
+    <div class="res-info">
+      <h4>{{ res.guestName }}</h4>
+      <p><span>📅</span> {{ res.checkIn }} to {{ res.checkOut }}</p>
     </div>
+    <span class="status-badge">Confirmed</span>
+  </div>
+</div>
   `
 })
 export class ReservationListComponent implements OnInit {
