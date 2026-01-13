@@ -52,15 +52,13 @@ h3 {
 
 /* Form Inputs Styling (Oussema's part) */
 input[type="text"], input[type="date"] {
-  border: 1px solid #dcdcdc;
-  transition: all 0.3s ease;
-  background-color: #fafafa;
-}
-
-input:focus {
-  border-color: #b89550; /* Gold focus border */
-  box-shadow: 0 0 8px rgba(184, 149, 80, 0.2);
-  outline: none;
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box; /* Ensures padding doesn't break width */
+  font-size: 1rem;
 }
 
 button {
