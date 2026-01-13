@@ -8,7 +8,7 @@ import { Reservation } from '../app/models/reservation.model';
   standalone: false, // Ensure this is true
   template: `
     <div class="list-container">
-      <h3>Current Reservations</h3>
+      <h3>Current Reservations (Hadhouma elli 7oslou)</h3>
       <table>
         <tr><th>Guest</th><th>Check-in</th><th>Check-out</th></tr>
         <tr *ngFor="let res of reservations">
