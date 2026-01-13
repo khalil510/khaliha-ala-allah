@@ -9,12 +9,12 @@ body {
 
 /* Header Styling */
 header {
-  background-color: #1a2a6c; /* Elegant Navy Blue */
-  color: #ffffff;
-  padding: 2rem;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  border-bottom: 4px solid #b89550; /* Gold Accent */
+  background: linear-gradient(rgba(26, 42, 108, 0.7), rgba(26, 42, 108, 0.7)), 
+              url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 2rem; /* More breathing room */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
 header h1 {
